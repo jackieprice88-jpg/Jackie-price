@@ -652,23 +652,38 @@
 
       .hero {
         grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        min-height: unset;
         text-align: center;
       }
 
       .hero-left {
-        padding: 52px 28px 32px;
+        order: 1;
+        padding: 56px 28px 36px;
         align-items: center;
+      }
+
+      .hero-right {
+        order: 2;
+        padding: 0 28px 56px;
+        align-items: flex-start;
+        justify-content: center;
       }
 
       .hero-sub { text-align: center; }
 
       .pills { justify-content: center; }
 
-      .hero-right {
-        padding: 0 28px 56px;
+      .photo-bg {
+        width: 90%;
+        max-width: 300px;
       }
 
-      .photo-wrap { width: 65%; max-width: 240px; }
+      .photo-wrap {
+        width: 72%;
+        max-width: 260px;
+        max-height: 380px;
+      }
 
       .strip { gap: 0; }
       .strip-item { padding: 12px 20px; font-size: 11px; }
@@ -722,7 +737,7 @@
 
     <div class="hero-cta-wrap">
       <a href="tel:2259104920" class="btn-cta">
-        &#9742;&ensp;Let&rsquo;s talk &mdash; (225) 910-4920
+        Let&rsquo;s talk &mdash; (225) 910-4920
       </a>
       <p class="hero-nudge">No pressure. No jargon. Just clarity.</p>
     </div>
